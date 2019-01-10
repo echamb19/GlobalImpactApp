@@ -17,7 +17,7 @@ public class ImpactViewController: UIViewController
         let impactLocation = CLLocationCoordinate2D(latitude: 10, longitude: 10)
         let mapSpan = MKCoordinateSpan(latitudeDelta: 10.05, longitudeDelta: 10.05)
         let impactRegion = MKCoordinateRegion(center: impactLocation, span:mapSpan)
-        mapView.animatedZoom(zoomRegion: impactRegion, duration: 2.5)
+        MapView.animatedZoom(zoomRegion: impactRegion, duration: 2.5)
     }
     
     public override func viewDidLoad()
@@ -30,10 +30,10 @@ public class ImpactViewController: UIViewController
 
 extension MKMapView
 {
-    public func animateedZoom(zoomRegion:MKCoordinateRegion, duration:TimeInterval)
+    public func animatedZoom(zoomRegion:MKCoordinateRegion, duration:TimeInterval)
     {
-        MKMapView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity:100, options: UIView.AnimationOptioins.curveEaseIn, animations:
-            { self.setRegion(zoomRegion, anitmated: true)}, completion: nil)
+        MKMapView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity:100, options: UIView.AnimationOptions.curveEaseIn, animations:
+            { self.setRegion(zoomRegion, animated: true)}, completion: nil)
         
     }
 }
