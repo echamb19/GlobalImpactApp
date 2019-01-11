@@ -23,18 +23,18 @@
                                     <constraint firstAttribute="height" constant="282" id="ujC-zv-irO"/>
                                 </constraints>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzh-Nt-frl">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzh-Nt-frl">
                                 <rect key="frame" x="0.0" y="341" width="414" height="30"/>
                                 <state key="normal" title="Go To Location"/>
                                 <connections>
                                     <action selector="MapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jae-cM-xJB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aob-Dm-5Mo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Both Screens for Map" translatesAutoresizingMaskIntoConstraints="NO" id="aob-Dm-5Mo">
                                 <rect key="frame" x="0.0" y="379" width="414" height="362"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our app would potentially increase the amount of people who vote inelections. " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ld-j8-5Ok">
-                                <rect key="frame" x="0.0" y="761" width="414" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Our app would potentially increase the amount of people who vote in elections. " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ld-j8-5Ok">
+                                <rect key="frame" x="0.0" y="761" width="414" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,4 +67,7 @@
             <point key="canvasLocation" x="133.33333333333334" y="133.25892857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Both Screens for Map" width="778" height="512"/>
+    </resources>
 </document>
